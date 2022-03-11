@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dmlc/nnvm/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d950c5d159c1345d0727dfb3cabb456e6947a8cb80519feaeed8e0b35e6e913e
+  sha256: fb977ec212fc812bb2edce10f37f92bfdae29a307729cd2c505baca4d02b1ab8
 
 build:
   number: 0
