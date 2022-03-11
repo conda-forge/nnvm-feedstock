@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('c') }}
   host:
     - libtvm {{ version }}
-    - dmlc-core
+    - dmlc
     - python
     - cython
     - setuptools
@@ -30,7 +30,7 @@ requirements:
     - pip
   run:
     - python
-    - dmlc-core
+    - dmlc
     - tvm-py {{ version }}
     - {{ pin_compatible('numpy') }}
     - libtvm {{ version }}
