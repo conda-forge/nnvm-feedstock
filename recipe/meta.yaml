@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/apache/incubator-tvm/archive/v{{ version }}.tar.gz
-  sha256: e2688526d24242bbf5f3adbc0590b1234c4fd0b7a8f61bd837af6c49e5020713
+  sha256: 8b85b4a6ff340166a53e1dcfccdeeafbabf837f3b0a2a1cb1b2d3cc0fee771f9
 
 build:
   number: 0
