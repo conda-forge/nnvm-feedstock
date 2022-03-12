@@ -14,7 +14,7 @@ build:
   script:
     - cd nnvm/python
     - {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [win]
+  skip: true  # [py>=39 or win]
 
 requirements:
   build:
