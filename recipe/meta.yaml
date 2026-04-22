@@ -10,7 +10,7 @@ source:
   sha256: e2688526d24242bbf5f3adbc0590b1234c4fd0b7a8f61bd837af6c49e5020713
 
 build:
-  number: 0
+  number: 1
   script:
     - cd nnvm/python
     - {{ PYTHON }} -m pip install . --no-deps -vv
@@ -20,6 +20,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - libtvm {{ version }}
     - python
@@ -30,7 +31,6 @@ requirements:
   run:
     - python
     - tvm-py {{ version }}
-    - {{ pin_compatible('numpy') }}
     - libtvm {{ version }}
 
 test:
