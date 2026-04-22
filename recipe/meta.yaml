@@ -1,5 +1,5 @@
 {% set name = "nnvm" %}
-{% set version = "0.6.1" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/apache/incubator-tvm/archive/v{{ version }}.tar.gz
-  sha256: e2688526d24242bbf5f3adbc0590b1234c4fd0b7a8f61bd837af6c49e5020713
+  sha256: 5a15cc16362cbd5d9daec2c4183193e2cefc0a7e1016e99724058d26d64bcf38
 
 build:
   number: 0
@@ -42,7 +42,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'NNVM Compiler Module of TVM Stack'
+  summary: NNVM Compiler Module of TVM Stack
   doc_url: https://tvm.apache.org/docs/
   dev_url: https://github.com/apache/incubator-tvm
 
